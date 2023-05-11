@@ -1,61 +1,233 @@
 body {
-    background: purple;
+  background-color: #F0F8FF;
+}
+.encabezado {
+  background-color: #EBDEF0;
+  border-radius: 10px;
+  border: 3px solid #D7BDE2;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  max-width: 500px;
+}
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 3em;
+  color: #884EA0;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #000000;
+}
+p {
+  font-family: Georgia, serif;
+  font-size: 1.5em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.universidad {
+  font-weight: bold;
+  color: #884EA0;
+  text-decoration: underline;
+}
+.carrera {
+  font-style: italic;
+  color: #7E57C2;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contacto li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.contacto li a {
+  color: #117A65;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.contacto li a:hover {
+  color: #FFF;
+}
+
+.experiencia {
+  margin-top: 50px;
+  background-color: #EBDEF0;
+  padding: 30px;
+}
+
+.carrusel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  margin-right: 30px;
+  flex: 0 0 auto;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 18px;
+  color: #117a65;
+  margin: 0;
+}
+
+.item ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.item li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.experiencia-lenguajes {
+  margin-top: 50px;
+}
+
+.barra {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.etiqueta {
+  width: 100px;
+  font-size: 18px;
+}
+
+.barra-interior {
+  height: 20px;
+  border-radius: 10px;
+}
+
+.html {
+  width: 80%;
+  background-color: #7E57C2;
+}
+
+.css {
+  width: 80%;
+  background-color: #D7BDE2;
+}
+
+.js {
+  width: 30%;
+  background-color: #7E57C2;
+}
+
+.python {
+  width: 60%;
+  background-color: #D7BDE2;
+}
+
+.cplus {
+  width: 50%;
+  background-color: #7E57C2;
+}
+
+.ts {
+  width: 20%;
+  background-color: #D7BDE2;
+}
+
+.cgato {
+  width: 30%;
+  background-color: #7E57C2;
+}
+
+.r {
+  width: 20%;
+  background-color: #D7BDE2;
+}
+
+.mongodb {
+  width: 60%;
+  background-color: #7E57C2;
+}
+
+.mysql {
+  width: 80%;
+  background-color: #D7BDE2;
+}
+
+.sql {
+  width: 40%;
+  background-color: #D7BDE2;
+}
+
+.experiencia-software {
+  background-color: #EBDEF0;
+  padding: 50px;
+  }
+  
+  .lista-software {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+  
+  .software {
+  width: calc(33.33% - 20px);
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  }
+  
+  .software:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .software img {
+  width: 80%;
+  margin-top: 20px;
+  }
+  
+  .software h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  }
+  
+  .software p {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 10px;
   }
 
-h1 {
-    font-family: sans-serif;
-    font-size: 200%;
-    font-style: normal;
-    color: white;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-}
-
-h2 {
-    font-family: sans-serif;
-    font-size: 150%;
-    font-style: normal;
-    color: white;
-    text-align: left;
-    margin-top: 20px;
-    margin-right: 30px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    border-bottom-width: 2px;
-    border-bottom-style: dashed;
-    border-bottom-color: #fff;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-h3 {
-    font-family: sans-serif;
-    font-size: 100%;
-    font-style: italic;
-    color: white;
-    text-align: left;
-    margin-top: 10px;
-    margin-right: 30px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    border-bottom-width: 1px;
-    border-bottom-style: dashed;
-    border-bottom-color: #fff;
-}
-
-h4 {
-  font-family: sans-serif;
-  font-size: 80%;
-  font-style: normal;
-  color: white;
-  text-align: left;
-  margin-top: 10px;
-  margin-right: 30px;
-  margin-bottom: 10px;
-  margin-left: 30px;
-}
+  
